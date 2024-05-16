@@ -64,4 +64,49 @@ models:
         tests:
           - unique
           - not_null
+      - name: DEAL_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('fact_deal_pipeline')
+              field: DEAL_KEY
 
+  - name: fact_deal_pipeline
+    description: "A test for fact deal pipeline"
+    columns:
+      - name: COMPANY_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_company')
+              field: COMPANY_KEY
+      - name: CONTACT_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_contact')
+              field: CONTACT_KEY
+      - name: DEAL_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_deal')
+              field: DEAL_KEY
+      - name: CURRENCY_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_currency')
+              field: CURRENCY_KEY
+      - name: USER_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_user')
+              field: USER_KEY
+      - name: DEAL_STAGE_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_deal_stages')
+              field: DEAL_STAGE_KEY
