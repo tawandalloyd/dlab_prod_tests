@@ -1,0 +1,6 @@
+WITH company as 
+(
+SELECT * FROM  DATALAB_DW_PRD.DWH.DIM_COMPANY
+)
+
+SELECT * FROM company
