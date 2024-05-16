@@ -1,0 +1,6 @@
+WITH contact as 
+(
+SELECT * FROM  DATALAB_DW_PRD.DWH.DIM_CONTACT
+)
+
+SELECT * FROM contact

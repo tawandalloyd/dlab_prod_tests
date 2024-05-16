@@ -18,3 +18,21 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: dim_contact
+    description: "A test for dim contact"
+    columns:
+      - name: CONTACT_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_currency
+    description: "A test for dim currency"
+    columns:
+      - name: CURRENCY_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
