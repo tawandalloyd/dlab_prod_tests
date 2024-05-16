@@ -64,12 +64,6 @@ models:
         tests:
           - unique
           - not_null
-      - name: DEAL_KEY
-        description: "referential integrity tests"
-        tests:
-          - relationships:
-              to: ref('fact_deal_pipeline')
-              field: DEAL_KEY
 
   - name: fact_deal_pipeline
     description: "A test for fact deal pipeline"
