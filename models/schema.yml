@@ -104,3 +104,19 @@ models:
           - relationships:
               to: ref('dim_deal_stages')
               field: DEAL_STAGE_KEY
+
+  - name: fact_rolodex
+    description: "A test for fact rolodex"
+    columns:
+      - name: COMPANY_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_company')
+              field: COMPANY_KEY
+      - name: CONTACT_KEY
+        description: "referential integrity tests"
+        tests:
+          - relationships:
+              to: ref('dim_contact')
+              field: CONTACT_KEY
