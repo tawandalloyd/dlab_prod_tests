@@ -9,3 +9,12 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: dim_company
+    description: "A test for dim company"
+    columns:
+      - name: COMPANY_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
