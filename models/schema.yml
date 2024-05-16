@@ -36,3 +36,32 @@ models:
         tests:
           - unique
           - not_null
+
+
+  - name: dim_deal
+    description: "A test for dim deal"
+    columns:
+      - name: DEAL_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_deal_stages
+    description: "A test for dim deal stages"
+    columns:
+      - name: STAGE_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_user
+    description: "A test for dim user"
+    columns:
+      - name: USER_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
