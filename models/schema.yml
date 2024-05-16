@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_address
+    description: "A test for dim address"
+    columns:
+      - name: ADDRESS_COMPANY_ID
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
