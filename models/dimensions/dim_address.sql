@@ -1,0 +1,6 @@
+WITH address as 
+(
+SELECT * FROM  DATALAB_DW_PRD.DWH.DIM_ADDRESS
+)
+
+SELECT * FROM address
